@@ -25,15 +25,12 @@ class About extends React.Component {
       <>
         <Navbar bg="light" variant="light" fixed="top">
           <Container>
-            <Navbar.Brand>Edu-Pro</Navbar.Brand>
+            <Navbar.Brand>PROPIUSS</Navbar.Brand>
             <Nav className="mr-auto">
               <Nav.Link>
                 <Link to="/home">HOME</Link>
               </Nav.Link>
 
-              <Nav.Link>
-                <Link to="/product">SERVICES</Link>
-              </Nav.Link>
               <Nav.Link>
                 <Link to="/package">PACKAGE</Link>
               </Nav.Link>

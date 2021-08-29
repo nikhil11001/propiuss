@@ -113,9 +113,9 @@
 
 .chat-bot-container {
   float: right;
-  position: relative;
-  top: 138rem;
-  left: 8rem;
+  position: absolute;
+  top: 124rem;
+  left: 73rem;
   z-index: 1;
 }
 

@@ -17,7 +17,14 @@ import {
 } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import packageIco from "../images/package.png";
+import home from "../images/home-automation.png";
+import building from "../images/smart-city.png";
+import office from "../images/office.png";
+import hotel from "../images/hotel.png";
+import hospital from "../images/hospital-bed.png";
+import industrial from "../images/industrial.png";
 import costPackageIco from "../images/box.png";
+
 import "../css/home.css";
 
 class Package extends React.Component {
@@ -32,14 +39,12 @@ class Package extends React.Component {
           fixed="top"
         >
           <Container>
-            <Navbar.Brand>Edu-Pro</Navbar.Brand>
+            <Navbar.Brand>PROPIUSS</Navbar.Brand>
             <Nav className="mr-auto">
               <Nav.Link>
                 <Link to="/home">HOME</Link>
               </Nav.Link>
-              <Nav.Link>
-                <Link to="/product">SERVICES</Link>
-              </Nav.Link>
+
               <Nav.Link>
                 <Link to="/package">PACKAGE</Link>
               </Nav.Link>
@@ -63,14 +68,14 @@ class Package extends React.Component {
                 src={packageIco}
                 width="10%"
               />
-              <h1>PACKAGES</h1>
+              <h1>AUTOMATION PACKAGES</h1>
               <hr />
               <Row>
                 <Col md={4}>
                   <Card border="dark">
-                    <Card.Header>PACKAGE 1</Card.Header>
+                    <Card.Header>Home Automation</Card.Header>
                     <Card.Body>
-                      <Image src={costPackageIco} width="20%" />
+                      <Image src={home} width="20%" />
                       <Card.Text>
                         Some quick example text to build on the card title and
                         make up the bulk of the card's content.
@@ -80,9 +85,9 @@ class Package extends React.Component {
                 </Col>
                 <Col md={4}>
                   <Card border="dark">
-                    <Card.Header>PACKAGE 2</Card.Header>
+                    <Card.Header>Building Automation</Card.Header>
                     <Card.Body>
-                      <Image src={costPackageIco} width="20%" />
+                      <Image src={building} width="20%" />
                       <Card.Text>
                         Some quick example text to build on the card title and
                         make up the bulk of the card's content.
@@ -92,9 +97,9 @@ class Package extends React.Component {
                 </Col>
                 <Col md={4}>
                   <Card border="dark">
-                    <Card.Header>PACKAGE 3</Card.Header>
+                    <Card.Header>Office Automation</Card.Header>
                     <Card.Body>
-                      <Image src={costPackageIco} width="20%" />
+                      <Image src={office} width="20%" />
                       <Card.Text>
                         Some quick example text to build on the card title and
                         make up the bulk of the card's content.
@@ -106,9 +111,9 @@ class Package extends React.Component {
               <Row className="margin-10">
                 <Col md={4}>
                   <Card border="dark">
-                    <Card.Header>PACKAGE 3</Card.Header>
+                    <Card.Header>Hotel Automation</Card.Header>
                     <Card.Body>
-                      <Image src={costPackageIco} width="20%" />
+                      <Image src={hotel} width="20%" />
                       <Card.Text>
                         Some quick example text to build on the card title and
                         make up the bulk of the card's content.
@@ -118,9 +123,9 @@ class Package extends React.Component {
                 </Col>
                 <Col md={4}>
                   <Card border="dark">
-                    <Card.Header>PACKAGE 4</Card.Header>
+                    <Card.Header>Hospital Automation</Card.Header>
                     <Card.Body>
-                      <Image src={costPackageIco} width="20%" />
+                      <Image src={hospital} width="20%" />
                       <Card.Text>
                         Some quick example text to build on the card title and
                         make up the bulk of the card's content.
@@ -130,9 +135,9 @@ class Package extends React.Component {
                 </Col>
                 <Col md={4}>
                   <Card border="dark">
-                    <Card.Header>PACKAGE 5</Card.Header>
+                    <Card.Header>Industrial Automation</Card.Header>
                     <Card.Body>
-                      <Image src={costPackageIco} width="20%" />
+                      <Image src={industrial} width="20%" />
                       <Card.Text>
                         Some quick example text to build on the card title and
                         make up the bulk of the card's content.
