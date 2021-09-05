@@ -44,7 +44,7 @@ class Contact extends React.Component {
               </p>
               <p>
                 <i class="bi bi-envelope-open margin-10"></i>
-                myinfo@gmail.com
+                info@propiuss.com
               </p>
             </Col>
             <Col md={6}>
