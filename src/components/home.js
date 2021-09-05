@@ -1,22 +1,15 @@
 import React from "react";
 import {
-  Button,
   Container,
-  Navbar,
   Nav,
-  Form,
-  FormControl,
-  Carousel,
-  NavDropdown,
   Row,
   Col,
   Image,
   Card,
-  CardGroup,
   Jumbotron,
   Tab,
+  Carousel,
 } from "react-bootstrap";
-import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 import { Chatbot } from "react-chatbot-kit";
 import "../css/home.css";
@@ -24,23 +17,8 @@ import mapIcon from "../images/number-one.png";
 import userExperienceIco from "../images/tablet.png";
 import webDevIco from "../images/house.png";
 import support from "../images/support.png";
-import infoIco from "../images/information.png";
 import serviceIco from "../images/settings.png";
-import deliveryIco from "../images/delivery-truck.png";
-import supplyIco from "../images/supply-chain.png";
-import programmingIco from "../images/programming.png";
-import androidIco from "../images/android.png";
-import JSIco from "../images/js-format.png";
-import sqlIco from "../images/mysql.png";
-import phpIco from "../images/php.png";
-import rubyIco from "../images/ruby.png";
-import javaIco from "../images/java.png";
-import reactIco from "../images/atom.png";
-import htmlIco from "../images/html-5.png";
 import ChatBotIco from "../images/chatbot.png";
-import banner1 from "../images/banner-iot-001.jpeg";
-import banner2 from "../images/banner-iot-002.jpeg";
-import banner3 from "../images/banner-iot-003.jpeg";
 import banner4 from "../images/banner-iot-004.jpg";
 import banner5 from "../images/banner-1.png";
 import banner6 from "../images/banner-iot-006.jpeg";
@@ -66,62 +44,46 @@ class Home extends React.Component {
   render() {
     return (
       <>
-        {/* <Navbar collapseOnSelect bg="light" variant="light" fixed="top" expand="sm"> */}
-        <Navbar
-          collapseOnSelect
-          expand="lg"
-          bg="light"
-          variant="light"
-          fixed="top"
-        >
-          <Container>
-            <Navbar.Brand>PROPIUSS</Navbar.Brand>
-            <Nav className="mr-auto">
-              <Nav.Link>
-                <Link to="/home">HOME</Link>
-              </Nav.Link>
-
-              <Nav.Link>
-                <Link to="/package">PACKAGE</Link>
-              </Nav.Link>
-              <Nav.Link>
-                <Link to="/about">ABOUT US</Link>
-              </Nav.Link>
-
-              <Nav.Link>
-                <Link to="/contact">CONTACT</Link>
-              </Nav.Link>
-            </Nav>
-          </Container>
-        </Navbar>
         <Carousel>
           <Carousel.Item>
-            <img className="d-block w-100" src={banner5} />
+            <Image className="d-block w-100" src={banner5} fluid />
           </Carousel.Item>
 
+          {/* <Carousel.Item>
+            <Image className="d-block w-100" src={banner6} fluid />
+          </Carousel.Item> */}
           <Carousel.Item>
-            <img className="d-block w-100" src={banner6} />
-          </Carousel.Item>
-          <Carousel.Item>
-            <img className="d-block w-100" src={banner4} />
+            <Image className="d-block w-100" src={banner4} fluid />
           </Carousel.Item>
         </Carousel>
         <Container>
           <div className="slogna-text"></div>
           <Row>
             <Col md={6}>
-              <Image src={home1} height="20%" thumbnail />
+              <Image
+                src={home1}
+                thumbnail
+                fluid
+                style={{ width: "100%", height: "auto" }}
+              />
             </Col>
             <Col md={6}>
-              <h3>Live in the Future</h3>
+              <h3 className="live-in-future-header">Live in the Future</h3>
               <hr />
               <Row style={{ marginTop: "20px" }}>
                 <Col md={1}>
-                  <img className="d-block w-100" src={phone} />
+                  <Image
+                    className="homepage-feature-ico d-block"
+                    src={phone}
+                    fluid
+                    style={{ width: "100%", height: "auto" }}
+                  />
                 </Col>
                 <Col md={10}>
-                  <h5>Control Everything at Your Fingertips</h5>
-                  <p>
+                  <h5 className="text-center">
+                    Control Everything at Your Fingertips
+                  </h5>
+                  <p className="text-center">
                     Turn on your lights, play your favourite music or change
                     your room temperature, at the tap of your smartphone.
                   </p>
@@ -129,11 +91,16 @@ class Home extends React.Component {
               </Row>
               <Row style={{ marginTop: "20px" }}>
                 <Col md={1}>
-                  <img className="d-block" src={serviceIco} width="100%" />
+                  <Image
+                    className="homepage-feature-ico d-block"
+                    src={serviceIco}
+                    fluid
+                    style={{ width: "100%", height: "auto" }}
+                  />
                 </Col>
                 <Col md={10}>
-                  <h5>Run Personalized Schedules</h5>
-                  <p>
+                  <h5 className="text-center">Run Personalized Schedules</h5>
+                  <p className="text-center">
                     Have your coffee ready when you wake up. Automatically turn
                     everything off when you leave for work. Experience true
                   </p>
@@ -141,11 +108,18 @@ class Home extends React.Component {
               </Row>
               <Row style={{ marginTop: "20px" }}>
                 <Col md={1}>
-                  <img className="d-block" width="100%" src={mike} />
+                  <Image
+                    className="homepage-feature-ico d-block"
+                    src={mike}
+                    fluid
+                    style={{ width: "100%", height: "auto" }}
+                  />
                 </Col>
                 <Col md={10}>
-                  <h5>Talk to Your Home or Make it Talk.</h5>
-                  <p>
+                  <h5 className="text-center">
+                    Talk to Your Home or Make it Talk.
+                  </h5>
+                  <p className="text-center">
                     Simply talk to your virtual voice assistant, and ask it to
                     do anything for you– be it ordering groceries to solving a
                     math problem.
@@ -156,14 +130,16 @@ class Home extends React.Component {
           </Row>
           <Row className="margin-top-30">
             <div className="text-center">
+              {/*
               <div className="padding-4-rem">
-                {/* <Image
+                 <Image
                   className="location-ico bounce-1"
                   src={infoIco}
                   width="20%"
-                /> */}
-              </div>
-              {this.state.showChatBot && (
+                /> 
+              </div>*/}
+
+              {/* {this.state.showChatBot && (
                 <div className="chat-bot-container">
                   <Chatbot
                     config={config}
@@ -171,12 +147,11 @@ class Home extends React.Component {
                     actionProvider={ActionProvider}
                   />
                 </div>
-              )}
-
+              )} */}
               <div className="margin-20">
                 <Row>
                   <Col md={3}>
-                    <Card style={{ width: "18rem" }}>
+                    <Card style={{ width: "18rem", margin: "auto" }}>
                       <Card.Body>
                         <div className="padding-4-rem">
                           <motion.div
@@ -186,7 +161,12 @@ class Home extends React.Component {
                             }}
                             whileTap={{ scale: 0.9 }}
                           >
-                            <Image className="" src={mapIcon} width="100%" />
+                            <Image
+                              className=""
+                              src={mapIcon}
+                              width="100%"
+                              fluid
+                            />
                           </motion.div>
                         </div>
                         <hr />
@@ -199,7 +179,7 @@ class Home extends React.Component {
                     </Card>
                   </Col>
                   <Col md={3}>
-                    <Card style={{ width: "18rem" }}>
+                    <Card style={{ width: "18rem", margin: "auto" }}>
                       <Card.Body>
                         <div className="padding-4-rem">
                           <motion.div
@@ -209,7 +189,7 @@ class Home extends React.Component {
                             }}
                             whileTap={{ scale: 0.9 }}
                           >
-                            <Image src={userExperienceIco} width="100%" />
+                            <Image src={userExperienceIco} width="100%" fluid />
                           </motion.div>
                         </div>
                         <hr />
@@ -222,7 +202,7 @@ class Home extends React.Component {
                     </Card>
                   </Col>
                   <Col md={3}>
-                    <Card style={{ width: "18rem" }}>
+                    <Card style={{ width: "18rem", margin: "auto" }}>
                       <Card.Body>
                         <div className="padding-4-rem">
                           <motion.div
@@ -232,7 +212,7 @@ class Home extends React.Component {
                             }}
                             whileTap={{ scale: 0.9 }}
                           >
-                            <Image src={webDevIco} width="100%" />
+                            <Image src={webDevIco} width="100%" fluid />
                           </motion.div>
                         </div>
                         <hr />
@@ -245,7 +225,7 @@ class Home extends React.Component {
                     </Card>
                   </Col>
                   <Col md={3}>
-                    <Card style={{ width: "18rem" }}>
+                    <Card style={{ width: "18rem", margin: "auto" }}>
                       <Card.Body>
                         <div className="padding-4-rem">
                           <motion.div
@@ -255,7 +235,7 @@ class Home extends React.Component {
                             }}
                             whileTap={{ scale: 0.9 }}
                           >
-                            <Image src={support} width="100%" />
+                            <Image src={support} width="100%" fluid />
                           </motion.div>
                         </div>
                         <hr />
@@ -342,162 +322,14 @@ class Home extends React.Component {
               </Tab.Container>
             </div>
           </div>
-          {/* <div className="margin-top-30">
-            <Jumbotron>
-              <p>
-                <i>
-                  We engage in all stages of product development, right from
-                  design to implementation and support. We deliver quality
-                  software using multiple models and are flexible to implement
-                  other models as per the requirements of the solution or the
-                  client.
-                </i>
-              </p>
-            </Jumbotron>
-          </div> */}
         </Container>
-
-        {/* <div className="text-center">
-          <div className="padding-4-rem">
-            <Image
-              className="location-ico bounce-1"
-              src={programmingIco}
-              width="15%"
-            />
-          </div>
-          <h1>TECHNOLOGIES</h1>
-          <hr />
-          <Container>
-            <h3>WE WORK ON</h3>
-            <Jumbotron>
-              <Row>
-                <Col md={4}>
-                  <Card>
-                    <Card.Body>
-                      <Card.Title>React</Card.Title>
-                      <Card.Text>
-                        <motion.div
-                          whileHover={{ scale: 1.2, rotate: 90 }}
-                          whileTap={{
-                            scale: 0.8,
-                            rotate: -90,
-                            borderRadius: "100%",
-                          }}
-                        >
-                          <Image src={reactIco} width="50%" />
-                        </motion.div>
-                      </Card.Text>
-                    </Card.Body>
-                  </Card>
-                </Col>
-                <Col md={4}>
-                  <Card>
-                    <Card.Body>
-                      <Card.Title>Java</Card.Title>
-                      <Card.Text>
-                        <motion.div
-                          whileHover={{ scale: 1.2, rotate: 360 }}
-                          whileTap={{
-                            scale: 0.8,
-                            rotate: -100,
-                            borderRadius: "100%",
-                          }}
-                        >
-                          <Image src={javaIco} width="50%" />
-                        </motion.div>
-                      </Card.Text>
-                    </Card.Body>
-                  </Card>
-                </Col>
-                <Col md={4}>
-                  <Card>
-                    <Card.Body>
-                      <Card.Title>HTML</Card.Title>
-                      <Card.Text>
-                        <motion.div
-                          whileHover={{ scale: 1.2, rotate: 360 }}
-                          whileTap={{
-                            scale: 0.8,
-                            rotate: -90,
-                            borderRadius: "100%",
-                          }}
-                        >
-                          <Image src={htmlIco} width="50%" />
-                        </motion.div>
-                      </Card.Text>
-                    </Card.Body>
-                  </Card>
-                </Col>
-              </Row>
-              <Row>
-                <Col md={4}>
-                  <Card>
-                    <Card.Body>
-                      <Card.Title>Ruby</Card.Title>
-                      <Card.Text>
-                        <motion.div
-                          whileHover={{ scale: 1.2, rotate: 360 }}
-                          whileTap={{
-                            scale: 0.8,
-                            rotate: -90,
-                            borderRadius: "100%",
-                          }}
-                        >
-                          <Image src={rubyIco} width="50%" />
-                        </motion.div>
-                      </Card.Text>
-                    </Card.Body>
-                  </Card>
-                </Col>
-                <Col md={4}>
-                  <Card>
-                    <Card.Body>
-                      <Card.Title>Android</Card.Title>
-                      <Card.Text>
-                        <motion.div
-                          whileHover={{ scale: 1.2, rotate: 360 }}
-                          whileTap={{
-                            scale: 0.8,
-                            rotate: -90,
-                            borderRadius: "100%",
-                          }}
-                        >
-                          <Image src={androidIco} width="50%" />
-                        </motion.div>
-                      </Card.Text>
-                    </Card.Body>
-                  </Card>
-                </Col>
-                <Col md={4}>
-                  <Card>
-                    <Card.Body>
-                      <Card.Title>Java Script</Card.Title>
-                      <Card.Text>
-                        <motion.div
-                          whileHover={{ scale: 1.2, rotate: 360 }}
-                          whileTap={{
-                            scale: 0.8,
-                            rotate: -90,
-                            borderRadius: "100%",
-                          }}
-                        >
-                          <Image src={JSIco} width="50%" />
-                        </motion.div>
-                      </Card.Text>
-                    </Card.Body>
-                  </Card>
-                </Col>
-              </Row>
-            </Jumbotron>
-          </Container>
-        </div> */}
 
         <Container>
           <Jumbotron>
             <div className="text-center">
               <div className="padding-4-rem">
                 <Image
-                  className="location-ico bounce-1"
+                  className="location-ico bounce-1 puzzle-ico"
                   src={puzzle}
                   width="10%"
                 />
@@ -514,7 +346,6 @@ class Home extends React.Component {
             </div>
           </Jumbotron>
         </Container>
-
         <div
           className="margin-top-30"
           style={{ background: "black", color: "white" }}
@@ -529,13 +360,14 @@ class Home extends React.Component {
                     <i className="bi bi-house-door margin-10"></i>HOME
                   </p>
                   <p>
+                    <i className="bi bi-screwdriver margin-10"></i>PACKAGES
+                  </p>
+                  <p>
                     <i className="bi bi-person margin-10"></i>ABOUT US{" "}
                   </p>
+
                   <p>
-                    <i className="bi bi-screwdriver margin-10"></i>SERVICES
-                  </p>
-                  <p>
-                    <i className="bi bi-telephone margin-10"></i>Contact
+                    <i className="bi bi-telephone margin-10"></i>CONTACT
                   </p>
                 </div>
               </Col>
@@ -554,11 +386,11 @@ class Home extends React.Component {
 
                 <p>
                   <i class="bi bi-envelope-open margin-10"></i>Email:
-                  info@biscoindia.com
+                  info@propiuss.com
                 </p>
               </Col>
             </Row>
-            <div className="chat-bot-ico">
+            {/* <div className="chat-bot-ico">
               <Image
                 className="location-ico bounce-1"
                 src={ChatBotIco}
@@ -567,7 +399,7 @@ class Home extends React.Component {
                   this.setState({ showChatBot: !this.state.showChatBot });
                 }}
               />
-            </div>
+            </div> */}
           </Container>
         </div>
       </>

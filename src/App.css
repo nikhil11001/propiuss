@@ -36,3 +36,17 @@
     transform: rotate(360deg);
   }
 }
+
+@media only screen and (max-width: 600px) {
+  .homepage-feature-ico {
+    width: 30% !important;
+    margin: auto;
+  }
+  .puzzle-ico {
+    width: 60% !important;
+  }
+  .live-in-future-header {
+    text-align: center;
+    margin-top: 16px;
+  }
+}

@@ -23,27 +23,6 @@ class Product extends React.Component {
   render() {
     return (
       <>
-        <Navbar bg="light" variant="light" fixed="top">
-          <Container>
-            <Navbar.Brand>PROPIUSS</Navbar.Brand>
-            <Nav className="mr-auto">
-              <Nav.Link>
-                <Link to="/home">HOME</Link>
-              </Nav.Link>
-
-              <Nav.Link>
-                <Link to="/package">PACKAGE</Link>
-              </Nav.Link>
-              <Nav.Link>
-                <Link to="/about">ABOUT US</Link>
-              </Nav.Link>
-              <Nav.Link>
-                <Link to="/contact">CONTACT</Link>
-              </Nav.Link>
-            </Nav>
-          </Container>
-        </Navbar>
-
         <Container>
           <div style={{ margin: "70px 0px" }}></div>
           <Jumbotron>

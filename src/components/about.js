@@ -23,26 +23,6 @@ class About extends React.Component {
   render() {
     return (
       <>
-        <Navbar bg="light" variant="light" fixed="top">
-          <Container>
-            <Navbar.Brand>PROPIUSS</Navbar.Brand>
-            <Nav className="mr-auto">
-              <Nav.Link>
-                <Link to="/home">HOME</Link>
-              </Nav.Link>
-
-              <Nav.Link>
-                <Link to="/package">PACKAGE</Link>
-              </Nav.Link>
-              <Nav.Link>
-                <Link to="/about">ABOUT US</Link>
-              </Nav.Link>
-              <Nav.Link>
-                <Link to="/contact">CONTACT</Link>
-              </Nav.Link>
-            </Nav>
-          </Container>
-        </Navbar>
         <Container>
           <div className="about-us">
             <Image
@@ -97,10 +77,10 @@ class About extends React.Component {
                     <i className="bi bi-house-door margin-10"></i>HOME
                   </p>
                   <p>
-                    <i className="bi bi-person margin-10"></i>ABOUT US{" "}
+                    <i className="bi bi-screwdriver margin-10"></i>PACKAGES
                   </p>
                   <p>
-                    <i className="bi bi-screwdriver margin-10"></i>SERVICES
+                    <i className="bi bi-person margin-10"></i>ABOUT US{" "}
                   </p>
                   <p>
                     <i className="bi bi-telephone margin-10"></i>Contact
@@ -122,7 +102,7 @@ class About extends React.Component {
 
                 <p>
                   <i class="bi bi-envelope-open margin-10"></i>Email:
-                  info@biscoindia.com
+                  info@propiuss.com
                 </p>
               </Col>
             </Row>
