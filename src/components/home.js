@@ -19,9 +19,10 @@ import webDevIco from "../images/house.png";
 import support from "../images/support.png";
 import serviceIco from "../images/settings.png";
 import ChatBotIco from "../images/chatbot.png";
-import banner4 from "../images/banner-iot-004.jpg";
-import banner5 from "../images/banner-1.png";
-import banner6 from "../images/banner-iot-006.jpeg";
+import banner1 from "../images/smart-banner-8.png";
+import banner2 from "../images/banner-1.png";
+import banner3 from "../images/smart-banner-3.png";
+import banner4 from "../images/smart-banner-2.png";
 import home1 from "../images/home1.jpeg";
 import mike from "../images/podcast.png";
 import phone from "../images/smartphone.png";
@@ -46,14 +47,17 @@ class Home extends React.Component {
       <>
         <Carousel>
           <Carousel.Item>
-            <Image className="d-block w-100" src={banner5} fluid />
+            <Image className="d-block w-100" src={banner4} fluid />
+          </Carousel.Item>
+          <Carousel.Item>
+            <Image className="d-block w-100" src={banner1} fluid />
           </Carousel.Item>
 
-          {/* <Carousel.Item>
-            <Image className="d-block w-100" src={banner6} fluid />
-          </Carousel.Item> */}
           <Carousel.Item>
-            <Image className="d-block w-100" src={banner4} fluid />
+            <Image className="d-block w-100" src={banner2} fluid />
+          </Carousel.Item>
+          <Carousel.Item>
+            <Image className="d-block w-100" src={banner3} fluid />
           </Carousel.Item>
         </Carousel>
         <Container>

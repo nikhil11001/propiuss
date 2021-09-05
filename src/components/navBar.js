@@ -7,9 +7,13 @@ export const NavBar = () => {
   const basicNavRef = React.createRef();
 
   const hideMenu = () => {
+    console.log("In hide menu");
     collapseBtnRef.current.classList.add("collapsed");
     basicNavRef.current.classList.remove("show");
   };
+  useEffect(() => {
+    console.log("In use effect");
+  });
 
   return (
     <Navbar bg="light" expand="lg" fixed="top">
