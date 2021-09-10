@@ -43,7 +43,7 @@ const Concepts = () => {
               </Col>
               <Col md={4}>
                 <Card border="dark">
-                  <Card.Header>Interactive Home</Card.Header>
+                  <Card.Header>Smart Home</Card.Header>
                   <Card.Body>
                     <Image src={home} width="20%" />
                     <Card.Text>

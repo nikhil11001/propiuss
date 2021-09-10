@@ -30,7 +30,7 @@ export const NavBar = () => {
               <Link to="/package">Package</Link>
             </Nav.Link>
             <Nav.Link onClick={hideMenu}>
-              <Link to="/concept">Concepts</Link>
+              <Link to="/concept">Ideas</Link>
             </Nav.Link>
             <Nav.Link onClick={hideMenu}>
               <Link to="/about">About Us</Link>
