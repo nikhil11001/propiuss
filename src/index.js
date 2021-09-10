@@ -1,20 +1,15 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
-import Home from "./components/home";
-import About from "./components/about";
-import Product from "./components/product";
-import Contact from "./components/contact";
-import 'bootstrap/dist/css/bootstrap.min.css';
-import {AppRouter} from './routes/appRouter';
+import React from "react";
+import ReactDOM from "react-dom";
+import "./index.css";
+import reportWebVitals from "./reportWebVitals";
+import "bootstrap/dist/css/bootstrap.min.css";
+import { AppRouter } from "./routes/appRouter";
 
 ReactDOM.render(
   <React.StrictMode>
     <AppRouter />
   </React.StrictMode>,
-  document.getElementById('root')
+  document.getElementById("root")
 );
 
 // If you want to start measuring performance in your app, pass a function

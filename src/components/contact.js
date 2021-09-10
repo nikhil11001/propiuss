@@ -2,20 +2,12 @@ import React from "react";
 import {
   Button,
   Container,
-  Navbar,
-  Nav,
   Form,
-  FormControl,
-  Carousel,
-  NavDropdown,
   Row,
   Col,
   Image,
-  Card,
-  CardGroup,
   Jumbotron,
 } from "react-bootstrap";
-import { Link } from "react-router-dom";
 import "../css/home.css";
 import mapIcon from "../images/placeholder.png";
 

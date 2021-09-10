@@ -1,21 +1,5 @@
 import React from "react";
-import {
-  Button,
-  Container,
-  Navbar,
-  Nav,
-  Form,
-  FormControl,
-  Carousel,
-  NavDropdown,
-  Row,
-  Col,
-  Image,
-  Card,
-  CardGroup,
-  Jumbotron,
-} from "react-bootstrap";
-import { Link } from "react-router-dom";
+import { Container, Row, Col, Image, Card, Jumbotron } from "react-bootstrap";
 import "../css/home.css";
 import aboutUsIcon from "../images/aboutUs.png";
 

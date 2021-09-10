@@ -23,18 +23,20 @@ export const NavBar = () => {
         <Navbar.Collapse id="basic-navbar-nav" ref={basicNavRef}>
           <Nav className="me-auto">
             <Nav.Link onClick={hideMenu}>
-              <Link to="/home">HOME</Link>
+              <Link to="/home">Home</Link>
             </Nav.Link>
 
             <Nav.Link onClick={hideMenu}>
-              <Link to="/package">PACKAGE</Link>
+              <Link to="/package">Package</Link>
             </Nav.Link>
             <Nav.Link onClick={hideMenu}>
-              <Link to="/about">ABOUT US</Link>
+              <Link to="/concept">Concepts</Link>
             </Nav.Link>
-
             <Nav.Link onClick={hideMenu}>
-              <Link to="/contact">CONTACT</Link>
+              <Link to="/about">About Us</Link>
+            </Nav.Link>
+            <Nav.Link onClick={hideMenu}>
+              <Link to="/contact">Contact</Link>
             </Nav.Link>
           </Nav>
         </Navbar.Collapse>

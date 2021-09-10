@@ -1,21 +1,5 @@
 import React from "react";
-import {
-  Button,
-  Container,
-  Navbar,
-  Nav,
-  Form,
-  FormControl,
-  Carousel,
-  NavDropdown,
-  Row,
-  Col,
-  Image,
-  Card,
-  CardGroup,
-  Jumbotron,
-} from "react-bootstrap";
-import { Link } from "react-router-dom";
+import { Container, Row, Col, Image, Card, Jumbotron } from "react-bootstrap";
 import packageIco from "../images/package.png";
 import home from "../images/home-automation.png";
 import building from "../images/smart-city.png";
@@ -23,7 +7,6 @@ import office from "../images/office.png";
 import hotel from "../images/hotel.png";
 import hospital from "../images/hospital-bed.png";
 import industrial from "../images/industrial.png";
-import costPackageIco from "../images/box.png";
 
 import "../css/home.css";
 
@@ -80,7 +63,7 @@ class Package extends React.Component {
                   </Card>
                 </Col>
               </Row>
-              <Row className="margin-10">
+              <Row className="margin-top-10">
                 <Col md={4}>
                   <Card border="dark">
                     <Card.Header>Hotel Automation</Card.Header>

@@ -11,14 +11,14 @@ import {
   Carousel,
 } from "react-bootstrap";
 import { motion } from "framer-motion";
-import { Chatbot } from "react-chatbot-kit";
+// import { Chatbot } from "react-chatbot-kit";
 import "../css/home.css";
 import mapIcon from "../images/number-one.png";
 import userExperienceIco from "../images/tablet.png";
 import webDevIco from "../images/house.png";
 import support from "../images/support.png";
 import serviceIco from "../images/settings.png";
-import ChatBotIco from "../images/chatbot.png";
+// import ChatBotIco from "../images/chatbot.png";
 import banner1 from "../images/smart-banner-8.png";
 import banner2 from "../images/banner-1.png";
 import banner3 from "../images/smart-banner-3.png";
@@ -31,9 +31,9 @@ import cursor from "../images/cursor.png";
 import installation from "../images/installation.png";
 import puzzle from "../images/puzzle.png";
 
-import config from "../chatBot/config";
-import MessageParser from "../chatBot/MessageParser";
-import ActionProvider from "../chatBot/ActionProvider";
+// import config from "../chatBot/config";
+// import MessageParser from "../chatBot/MessageParser";
+// import ActionProvider from "../chatBot/ActionProvider";
 
 class Home extends React.Component {
   constructor(props) {

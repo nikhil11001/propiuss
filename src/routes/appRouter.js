@@ -6,6 +6,7 @@ import Home from "../components/home";
 import Product from "../components/product";
 import Package from "../components/package";
 import { NavBar } from "../components/navBar";
+import Concepts from "../components/concept";
 
 export const AppRouter = () => {
   return (
@@ -30,6 +31,9 @@ export const AppRouter = () => {
           </Route>
           <Route exact={false} path="/contact">
             <Contact />
+          </Route>
+          <Route exact={false} path="/concept">
+            <Concepts />
           </Route>
         </Switch>
       </Router>
