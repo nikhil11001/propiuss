@@ -7,6 +7,7 @@ import Product from "../components/product";
 import Package from "../components/package";
 import { NavBar } from "../components/navBar";
 import Concepts from "../components/concept";
+import Footer from "../components/footer";
 
 export const AppRouter = () => {
   return (
@@ -36,6 +37,7 @@ export const AppRouter = () => {
             <Concepts />
           </Route>
         </Switch>
+        <Footer />
       </Router>
     </>
   );

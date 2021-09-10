@@ -125,3 +125,8 @@
   left: 76rem;
   top: -7px;
 }
+
+.footer-links {
+  text-decoration: none;
+  color: white;
+}

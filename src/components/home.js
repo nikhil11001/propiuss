@@ -350,62 +350,6 @@ class Home extends React.Component {
             </div>
           </Jumbotron>
         </Container>
-        <div
-          className="margin-top-30"
-          style={{ background: "black", color: "white" }}
-        >
-          <Container>
-            <Row>
-              <Col md={4}>
-                <h6 className="margin-10">LINKS</h6>
-                <div>
-                  <p>
-                    {" "}
-                    <i className="bi bi-house-door margin-10"></i>HOME
-                  </p>
-                  <p>
-                    <i className="bi bi-screwdriver margin-10"></i>PACKAGES
-                  </p>
-                  <p>
-                    <i className="bi bi-person margin-10"></i>ABOUT US{" "}
-                  </p>
-
-                  <p>
-                    <i className="bi bi-telephone margin-10"></i>CONTACT
-                  </p>
-                </div>
-              </Col>
-
-              <Col md={4}>
-                <h6 className="margin-10">CONTACT</h6>
-                <p>
-                  <i class="bi bi-cursor margin-10"></i>Unit No.3, Building
-                  No.1, Ground Floor, Liliya Nagar, Off S.V.Road, Goregaon
-                  (West), Mumbai-400 062. India.
-                </p>
-
-                <p>
-                  <i class="bi bi-phone margin-10"></i>Phone:+91 9820058279
-                </p>
-
-                <p>
-                  <i class="bi bi-envelope-open margin-10"></i>Email:
-                  info@propiuss.com
-                </p>
-              </Col>
-            </Row>
-            {/* <div className="chat-bot-ico">
-              <Image
-                className="location-ico bounce-1"
-                src={ChatBotIco}
-                width="5%"
-                onClick={() => {
-                  this.setState({ showChatBot: !this.state.showChatBot });
-                }}
-              />
-            </div> */}
-          </Container>
-        </div>
       </>
     );
   }
