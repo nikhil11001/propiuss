@@ -43,18 +43,17 @@ const Footer = () => {
           <Col md={4}>
             <h6 className="margin-10">CONTACT</h6>
             <p>
-              <i class="bi bi-cursor margin-10"></i>Unit No.3, Building No.1,
-              Ground Floor, Liliya Nagar, Off S.V.Road, Goregaon (West),
-              Mumbai-400 062. India.
+              <i class="bi bi-cursor margin-10"></i>E504,Ayaan Building No2,
+              Ubalenager, Opp.sai satyam park, Wagholi ,Pune 412207
             </p>
 
             <p>
-              <i class="bi bi-phone margin-10"></i>Phone:+91 9820058279
+              <i class="bi bi-phone margin-10"></i>Mob : +91 89835 00938
             </p>
 
             <p>
               <i class="bi bi-envelope-open margin-10"></i>Email:
-              info@propiuss.com
+              info@smartautoware.com
             </p>
           </Col>
         </Row>

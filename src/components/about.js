@@ -26,20 +26,33 @@ class About extends React.Component {
           <div className="margin-top-30">
             <Jumbotron>
               <Card>
-                <Card.Header>Lorem Ipsum</Card.Header>
+                <Card.Header>
+                  <h3>Smart Autoware</h3>
+                </Card.Header>
                 <Card.Body>
-                  <Card.Title>What is Lorem Ipsum?</Card.Title>
                   <Card.Text>
-                    Lorem Ipsum is simply dummy text of the printing and
-                    typesetting industry. Lorem Ipsum has been the industry's
-                    standard dummy text ever since the 1500s, when an unknown
-                    printer took a galley of type and scrambled it to make a
-                    type specimen book. It has survived not only five centuries,
-                    but also the leap into electronic typesetting, remaining
-                    essentially unchanged. It was popularised in the 1960s with
-                    the release of Letraset sheets containing Lorem Ipsum
-                    passages, and more recently with desktop publishing software
-                    like Aldus PageMaker including versions of Lorem Ipsum.
+                    Smart Autoware provides you with a completely customized
+                    home automation experience. Our motto is to make automation
+                    a part of your daily life. We operate on the simple thought
+                    of providing end to end solution in automation. Every
+                    service we provide is based on values such as transparency,
+                    commitment and excellence. We work toward contributing
+                    happiness and value to people’s life through automation.
+                    Many think that automation is a luxury and is not affordable
+                    to all. But we believe that it can be a combination of
+                    luxury and convenience. We make automation affordable and
+                    provide customized solutions. Smart Autoware brings to you
+                    the latest in IoT technology and enables you to control all
+                    your home appliances through an app. Smart Autoware gives
+                    you the convenience of controlling your lights, fans, TVs,
+                    ACs and a lot of other appliances at your fingertips from
+                    anywhere in the world. Smart Autoware is a one-stop secure,
+                    safe and affordable solution to make your life hassle free.
+                    With a range of easy to install products and the ability to
+                    create customizable scenarios, Smart Autoware is your answer
+                    for all your home automation requirements. All you need is a
+                    smartphone, a wifi connection and our best in-class products
+                    to simplify the mundane tasks of managing your home.
                   </Card.Text>
                 </Card.Body>
               </Card>

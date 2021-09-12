@@ -18,7 +18,7 @@ export const NavBar = () => {
   return (
     <Navbar bg="light" expand="lg" fixed="top">
       <Container>
-        <Navbar.Brand>PROPIUSS</Navbar.Brand>
+        <Navbar.Brand>SMART AUTOWARE</Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" ref={collapseBtnRef} />
         <Navbar.Collapse id="basic-navbar-nav" ref={basicNavRef}>
           <Nav className="me-auto">

@@ -24,19 +24,17 @@ class Contact extends React.Component {
               <p>
                 <i className="bi bi-globe2 margin-10" />
                 <span>
-                  Factory - 53/1, Nigdi - Chakan Road, Near Talwade Circle
+                  E504,Ayaan Building No2, Ubalenager, Opp.sai satyam park,
                 </span>
-                <p className="margin-10">
-                  Talwade, Tal. Haveli, Dist. Pune, Maharashtra, India - 411062
-                </p>
+                <p className="margin-10">Wagholi, Pune - 412207</p>
               </p>
               <p>
                 <i className="bi bi-telephone margin-10" />
-                +91 9921001880
+                +91 89835 00938
               </p>
               <p>
                 <i class="bi bi-envelope-open margin-10"></i>
-                info@propiuss.com
+                info@smartautoware.com
               </p>
             </Col>
             <Col md={6}>
@@ -87,13 +85,13 @@ class Contact extends React.Component {
 
             <div style={{ margin: "20px 0" }}>
               <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d121058.92836565562!2d73.7929269405248!3d18.52476632650221!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2bf2e67461101%3A0x828d43bf9d9ee343!2sPune%2C%20Maharashtra!5e0!3m2!1sen!2sin!4v1615096060797!5m2!1sen!2sin"
+                src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d3781.981885851621!2d73.95874956423715!3d18.574855372361206!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sE504%2CAyaan%20Building%20No2%2C%20Ubalenager%2C%20Opp.sai%20satyam%20park%2C%20Wagholi%20%2CPune%20412207!5e0!3m2!1sen!2sin!4v1631426328579!5m2!1sen!2sin"
                 width="100%"
-                height="400"
+                height="600"
                 style={{ border: 0 }}
                 allowfullscreen=""
                 loading="lazy"
-              ></iframe>
+              />
             </div>
           </Jumbotron>
         </div>
